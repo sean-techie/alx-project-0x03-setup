@@ -1,13 +1,3 @@
-Resolve a 404 page not found
-mandatory
-Objectives: In the file-based routing system, each pathname has to correspond to a particular file that exists in the pages/ directory. In an event where any such pathname is used but not found in the pages directory. Your routing will resolve to a 404 page not found.
-
-This is a default behavior in Nextjs applications. The behavior can be overridden if you wish to have a Custom Error Page
-
-Instructions:
-
-From your pages/ directory create a file 404.tsx
-Replace the content of this file with the code below:
 import Link from 'next/link';
 import { FaHome } from 'react-icons/fa'; 
 
@@ -38,12 +28,3 @@ const Custom404 = () => {
 }
 
 export default Custom404;
-
-Save and close your files
-Run npm run dev from the terminal
-From a tab in your browser type http://localhost:3000/unknown-pathname to see the changes made.
-Repo:
-
-GitHub repository: alx-project-0x03-setup
-Directory: alx-project-0x03
-File: pages/404.tsx
